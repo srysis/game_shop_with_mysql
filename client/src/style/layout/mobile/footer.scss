@@ -1,0 +1,14 @@
+@media screen and (max-width: 500px) {
+	footer {
+		flex-direction: column;
+		padding: 20px 1.5%;
+
+		h3#source_code_link {
+			margin-bottom: 10px;
+		}
+
+		p {
+			font-size: 0.8em;
+		}
+	}
+}

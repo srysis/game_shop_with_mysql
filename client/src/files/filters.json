@@ -1,0 +1,37 @@
+[
+	{
+		"genre": {
+			"1": "Action",
+			"2": "FPS",
+			"3": "Stealth",
+			"4": "MMORPG",
+			"5": "RPG",
+			"6": "Sandbox",
+			"7": "Survival",
+			"8": "Platformer"
+		},
+		"player_count": {
+			"1": "Singleplayer",
+			"2": "Multiplayer",
+			"3": "Co-op"
+		},
+		"format": {
+			"1": "PvP",
+			"2": "PvE"
+		},
+		"setting": {
+			"1": "Post-apocalyptic",
+			"2": "Gothic",
+			"3": "Horror",
+			"4": "Fantasy",
+			"5": "Dark Fantasy",
+			"6": "Sci-fi"
+		},
+		"misc_tags": {
+			"1": "Immersive Sim",
+			"2": "Zombies",
+			"3": "Horde Shooter",
+			"4": "Story Rich"
+		}
+	}
+]

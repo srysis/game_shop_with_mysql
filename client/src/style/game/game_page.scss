@@ -1,0 +1,258 @@
+div#game_page {
+	border: 2px solid #bbb;
+	border-radius: 10px;
+	padding: 0 1%;
+	box-shadow: 0 0 15px #bbb;
+	background-color: #fff;
+
+	div.game_details {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		margin: 50px 0;
+
+		div.box_art {
+			img {
+				width: auto;
+				height: auto;
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+
+		div.info_and_options {
+			width: 65%;
+
+			h2 {
+				font-size: 3em;
+			}
+
+			div.tags_container {
+				margin: 10px 0;
+
+				span {
+					margin-right: 10px;
+					border: 1px solid #888;
+					border-radius: 5px;
+					padding: 3px 15px;
+					background-color: #eee;
+					font-size: 1em;
+				}
+			}
+
+			p {
+				margin-top: 30px;
+				font-size: 1.5em;
+			}
+
+			div.buy_container {
+				display: flex;
+				align-items: center;
+				margin-top: 40px;
+
+				p.price, button.buy, button.is_in_cart {
+					margin: 0 25px;
+				}
+
+				p.price {
+					margin-top: 0;
+					margin-left: 0;
+					font-weight: bold;
+					font-size: 2em;
+				}
+
+				button.buy, button.is_in_cart {
+					width: 25%;
+					border: 2px solid #ccc;
+					border-radius: 3px;
+					padding: 12px 5%;
+					box-shadow: 0 0 10px #ddd;
+					font-weight: bold;
+				}
+
+				button.buy {
+					background-color: #fff;
+					cursor: pointer;
+				}
+
+				button.buy:hover {
+					border: 2px solid #bbb;
+					background-color: #ccc;
+				}
+
+				button.buy:active {
+					background-color: #aaa;
+				}
+
+				button.is_in_cart {
+					background-color: #ddd;
+					cursor: not-allowed;
+				}
+			}
+
+			
+		}
+	}
+
+	div#description_wrapper {
+		padding: 0 6%;
+
+		div.description_title {
+			h2 {
+				padding: 0 2.5%;
+				font-size: 1.8em;
+			}
+		}
+
+		div.game_description {
+			font-size: 1.3em;
+
+			span > p {
+				margin: 30px 0;
+				text-indent: 2em;
+			}
+		}
+	}
+	
+
+	div.game_screenshots {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 98%;
+		margin: 50px auto;
+		border: 2px solid #ccc;
+		border-radius: 10px;
+		padding: 2% 1%;
+		box-shadow: 0 0 15px #ddd;
+
+		button.left_button, button.right_button {
+			border: 2px solid #ddd;
+			border-radius: 10px;
+			padding: 20px 0.5%;
+			box-shadow: 0 0 15px #ddd;
+			background-color: #eee;
+			font-size: 3em;
+			font-weight: bold;
+			cursor: pointer;
+		}
+
+		button.left_button:hover, button.right_button:hover {
+			border: 2px solid #ccc;
+			background-color: #ddd;
+		}
+
+		button.left_button:active, button.right_button:active {
+			background-color: #bbb;
+		}
+
+		div.image_container {
+			margin: 0 1%;
+
+			img {
+				width: auto;
+				height: auto;
+				max-width: 100%;
+				max-height: 100%;
+				cursor: pointer;
+				transition: transform 0.2s;
+			}
+		}
+
+		div.image_container:hover {
+			img {
+				transform: scale(1.15);
+				box-shadow: 0 0 10px #000;
+			}
+		}
+
+		div.image_container:active {
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	div#image_fullscreen_overlay_container {
+		position: fixed;
+		display: flex;
+		justify-content: space-between;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 6;
+		background: rgba(0, 0, 0, 0.98);
+		animation: scale_container 0.1s;
+
+		img.image_fullscreen {
+			display: block;
+			width: 75vw;
+			height: 88vh;
+			object-fit: contain;
+			margin: auto;
+			border: 2px solid gray;
+			border-radius: 5px;
+			padding: 15px;
+			background-color: black;
+			animation: scale_image 0.3s;
+			animation-fill-mode: forwards;
+		}
+
+		#prev_image, #next_image, #close_button {
+			cursor: pointer;
+		}
+
+		#prev_image, #next_image {
+			height: 25%;
+			margin: auto 0;
+			border: none;
+			padding: 3.5%;
+			font-size: 3em;
+			background-color: transparent;
+			color: #fff;
+		}
+
+		#close_button {
+			position: absolute;
+			top: 1%;
+			right: 1%;
+			border: none;
+			padding: 4px 8px;
+			background-color: transparent;
+
+			img {
+				width: 36px;
+				height: 36px;
+				filter: invert(100%) sepia(63%) saturate(0%) hue-rotate(65deg) brightness(105%) contrast(101%);
+			}
+		}
+
+		#prev_image:hover, #next_image:hover, #close_button:hover {
+			background-color: #444;
+		}
+
+		#prev_image:active, #next_image:active, #close_button:active {
+			background-color: #333;
+		}
+		
+	}
+
+	@keyframes scale_container {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	@keyframes scale_image {
+		0% {
+			transform: scale(0);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+}
+

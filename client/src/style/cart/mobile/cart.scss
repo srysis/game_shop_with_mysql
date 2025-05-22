@@ -1,0 +1,60 @@
+@media screen and (max-width: 500px) {
+	div#cart {
+		padding: 20px 2vw;
+		font-size: 0.9em;
+
+		h1 {
+			font-size: 1.8em;
+		}
+
+		div.cart_item {
+			margin: 15px 0;
+			padding: 10px 3%;
+
+			div.link_container {
+				div.box_art {
+					width: 35%;
+
+					img {
+						max-width: 95%;
+						max-height: 95%;
+					}
+				}
+
+				div.item_info {
+					width: 100%;
+					font-size: 1em;
+
+					h2 {
+						margin-bottom: 3px;
+						font-size: 1.6em;
+					}
+
+					p {
+						margin-top: 3px;
+					}
+				}
+
+				div.remove_from_cart_container {
+					width: 10%;
+
+					button.remove_from_cart {
+						img {
+							width: 25px;
+						}
+					}
+				}
+			}
+		}
+
+		div.flex_container {
+			margin-top: 5px;
+
+			div#clear_cart_container {
+				button {
+					padding: 10px 3vw;
+				}
+			}
+		}
+	}
+}

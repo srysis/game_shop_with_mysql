@@ -1,0 +1,128 @@
+@media screen and (max-width: 500px) {
+	div#game_page {
+		div.game_details {
+			flex-direction: column;
+			margin: 30px 0;
+			padding: 0 1.5%;
+
+			div.box_art {
+				display: flex;
+				justify-content: center;
+
+				img {
+					max-width: 80%;
+					max-height: 80%;
+				}
+				
+			}
+
+			div.info_and_options {
+				width: 100%;
+				margin-top: 10px;
+
+				h2 {
+					text-align: center;
+					font-size: 2em;
+				}
+
+				div.tags_container {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					margin: 5px 0;
+
+					span {
+						display: inline-block;
+						margin-top: 10px;
+						font-size: 0.8em;
+					}
+					
+				}
+
+				p {
+					margin-top: 20px;
+					font-size: 1.1em;
+				}
+
+				div.buy_container {
+					justify-content: space-between;
+					margin-top: 20px;
+
+					p.price, button.buy, button.is_in_cart {
+						margin-left: 0;
+						margin-right: 0;
+					}
+
+					button.buy, button.is_in_cart {
+						margin-right: 0;
+						width: 50%;
+					}
+				}
+			}
+		}
+
+		div#description_wrapper {
+			padding: 0 1.5%;
+
+			div.description_title {
+				h2 {
+					padding: 0 0.8em;
+					font-size: 1.6em;
+				}
+			}
+
+			div.game_description {
+				p {
+					margin: 20px 0;
+					font-size: 0.8em;
+					text-indent: 1em;
+				}
+			}
+		}
+
+		div.game_screenshots {
+			flex-direction: column;
+			width: 100%;
+			margin: 20px auto;
+
+			div.buttons_container {
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				margin-top: 10px;
+
+				button.left_button, button.right_button {
+					width: 20%;
+					margin: 0 1%;
+					border-radius: 5px;
+					padding: 5px 6%;
+					font-size: 1.5em;
+				}
+			}
+			
+		}
+
+		div#image_fullscreen_overlay_container {
+			flex-direction: column;
+			justify-content: flex-start;
+
+			img.image_fullscreen {
+				width: 97vw;
+				height: 32vh;
+				margin: 20px auto;
+				margin-top: 60%;
+				padding: 5px 10px;
+			}
+
+			div {
+				display: flex;
+				justify-content: space-between;
+
+				button#prev_image, button#next_image {
+					height: 100%;
+					font-size: 3.2em;
+				}
+			}
+		}
+	}
+}

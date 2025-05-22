@@ -1,0 +1,18 @@
+@media screen and (max-width: 500px) {
+	div#search_results {
+		div.search_result {
+			padding: 5px 1%;
+
+			div.link_container {
+				div.box_art {
+					width: 20%;
+					margin-right: 2%;
+				}
+
+				div.title {
+					width: 80%;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+@media screen and (max-width: 500px) {
+	div#filters {
+		width: 100%;
+		padding: 10px 1.5%;
+
+		button.filters_toggler {
+			width: 100%;
+			margin: auto;
+			border: none;
+			font-weight: bold;
+			font-size: 1.6em;
+			background: transparent;
+		}
+
+		div#active_filters {
+			margin-top: 10px;
+		}
+
+		div#container {
+			display: none;
+
+			form#filters_form {
+				margin-top: 15px;
+
+				div.filters_container {
+					h3 {
+						margin-left: 2vw;
+					}
+				}
+
+				label.checkbox_container {
+					width: 47%;
+					margin-left: 2vw;
+					font-size: 16px;
+				}
+			}
+
+			div#reset_filters_container {
+				margin-top: 0;
+
+				button {
+					padding: 7px 3vw;
+				}
+			}
+		}
+
+		div#container.active {
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,93 @@
+@media screen and (max-width: 500px) {
+	div#catalog {
+		width: 100%;
+		margin-top: 10px;
+		padding: 10px 1.5%;
+
+		div#games.grid {
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			div.game {
+				width: 44vw;
+				margin-right: 0;
+				font-size: 0.9em;
+
+				div.link_container {
+					div.box_art {
+						img {
+							max-width: 90%;
+							max-height: 90%;
+						}
+					}
+
+					div.title {
+						h2 {
+							margin: 5px 0;
+						}
+
+						div.tags_container {
+							span {
+								margin-bottom: 0;
+								font-size: 0.95em;
+							}
+						}
+					}
+				}
+
+				div.info {
+					div.price {
+						p {
+							font-size: 1.4em;
+						}
+					}
+				}
+			}
+		}
+
+		div#games.list {
+			div.game {
+				position: relative;
+				padding: 5px 2%;
+				font-size: 1.1em;
+
+				div.box_art {
+					width: 22%;
+					margin: 0;
+					margin-top: 5px;
+
+					img {
+						max-width: 90%;
+						max-height: 90%;
+					}
+				}
+
+				div.title {
+					width: 64%;
+
+					h2 {
+						font-size: 1.2em;
+					}
+
+					span > span {
+						display: inline-block;
+						margin-right: 3px;
+						padding: 1px 3px;
+						font-size: 0.65em;
+					}
+				}
+
+				div.info {
+					width: 14%;
+					position: absolute;
+					right: 1vw;
+					bottom: 11px;
+
+					div.price {
+						text-align: left;
+					}
+				}
+			}
+		}
+	}
+}
