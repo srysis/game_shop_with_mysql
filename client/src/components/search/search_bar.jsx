@@ -3,11 +3,13 @@ import axios from 'axios';
 
 
 function SearchBar({setSearchQueue, setSearchingOverlayFunction, setFoundGamesList}) {
+	const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+
 	function handleSearch(event) {
 		setSearchQueue(event.target.value.toLowerCase());
 		
 		if (event.target.value !== "") {
-			axios.post('http://localhost:8081/games/search', event.target.value.toLowerCase())
+			axios.post(`${API_BASE_URL}/games/search`, event.target.value.toLowerCase())
 			.then(response => setFoundGamesList(response.data))
 			.catch(error => console.error(error))
 		} else {
