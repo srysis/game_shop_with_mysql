@@ -28,7 +28,7 @@ header {
 		}
 
 		input#search_bar::-webkit-search-cancel-button {
-			-webkit-appearance: none;	//hide default 'clear' button
+			-webkit-appearance: none;	/*hide default 'clear' button*/
 			box-sizing: border-box;
 			margin: auto;
 			cursor: pointer;
