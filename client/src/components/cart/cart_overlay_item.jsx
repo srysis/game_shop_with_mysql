@@ -16,7 +16,7 @@ function CartOverlayItem({
 				</div>
 				<div className="item_info">
 					<h2>{name}</h2>
-					<span className="price"><p>${price}.00</p></span>
+					<span className="price"><p>${price}</p></span>
 				</div>
 			</div>
 		</div>

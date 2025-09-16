@@ -18,7 +18,7 @@ function CartItem({
 				</div>
 				<div className="cart_item_info">
 					<h2><Link to={`/product/${id}`}>{name}</Link></h2>
-					<p>${price}.00</p>
+					<p>${price}</p>
 				</div>
 				<div className="remove_from_cart_container">
 					<button type="button" className="remove_from_cart" onClick={ () => { onRemove(id) } }><img src={remove_icon} /></button>
