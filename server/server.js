@@ -31,7 +31,6 @@ app.get('/games', (request, response) => {
 	database.query(sql_query, (error, data) => {
 		if (error) return response.json(error);
 
-		console.log(data);
 		return response.json(data);
 	})
 })
@@ -50,7 +49,6 @@ app.get('/games/:id', (request, response) => {
 	database.query(sql_query, (error, data) => {
 		if (error) return response.json(error);
 
-		console.log(data);
 		return response.json(data);
 	})
 })
@@ -62,7 +60,6 @@ app.get('/cart', (request, response) => {
 	database.query(sql_query, (error, data) => {
 		if (error) return response.json(error);
 
-		console.log(data);
 		return response.json(data);
 	})
 })
@@ -76,7 +73,6 @@ app.post('/updateCart', (request, response, next) => {
 	database.query(sql_query, (error, data) => {
 		if (error) return response.json(error);
 
-		console.log(data);
 		return response.json(data);
 	})
 })
@@ -90,7 +86,6 @@ app.post('/games/search', (request, response, next) => {
 	database.query(sql_query, (error, data) => {
 		if (error) return response.json(error);
 
-		console.log(data);
 		return response.json(data);
 	})
 })
