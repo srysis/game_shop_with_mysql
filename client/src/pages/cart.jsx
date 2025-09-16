@@ -16,7 +16,7 @@ function Cart( {cart_content, onRemove, onCartClear} ) {
 		let total_price = 0;
 
 		for (let item of cart_content) {
-			total_price += item.price;
+			total_price += parseInt(item.price);
 		}
 
 		return (
