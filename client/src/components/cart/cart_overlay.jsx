@@ -3,8 +3,8 @@ import { Link } from "react-router";
 
 import CartOverlayItem from "./cart_overlay_item.jsx"
 
-import "../../style/cart/cart_overlay.scss"
-import "../../style/cart/mobile/cart_overlay.scss"
+import "../../style/cart/cart_overlay.css"
+import "../../style/cart/mobile/cart_overlay.css"
 
 function CartOverlay( {cart_content, setCartActive} ) {
 

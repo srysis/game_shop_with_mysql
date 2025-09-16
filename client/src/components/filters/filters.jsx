@@ -4,8 +4,8 @@ import filters from "../../files/filters.json"
 
 import Filter from "./filter.jsx"
 
-import "../../style/home/filters.scss"
-import "../../style/home/mobile/filters.scss"
+import "../../style/home/filters.css"
+import "../../style/home/mobile/filters.css"
 
 function Filters({device_type, active_filters, setFiltersFunction, removeFilterFunction, resetFiltersFunction}) {
 	let SESSION_checked_checkboxes = JSON.parse(window.sessionStorage.getItem('checked_checkboxes'));

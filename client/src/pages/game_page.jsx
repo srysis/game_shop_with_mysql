@@ -8,8 +8,8 @@ import axios from 'axios'
 import GameScreenshots from "../components/game_page/game_screenshots.jsx"
 import ScreenshotOverlay from "../components/game_page/screenshot_overlay.jsx"
 
-import "../style/game/game_page.scss"
-import "../style/game/mobile/game_page.scss"
+import "../style/game/game_page.css"
+import "../style/game/mobile/game_page.css"
 
 function GamePage({device_type, addToCartFunction, isDuplicate}) {
 	const { id } = useParams();

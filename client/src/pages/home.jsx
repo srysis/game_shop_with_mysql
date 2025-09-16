@@ -5,8 +5,8 @@ import useTitle from "../hooks/useTitle.jsx"
 import Filters from "../components/filters/filters.jsx"
 import Catalog from "../components/catalog/catalog.jsx"
 
-import "../style/home/home.scss"
-import "../style/home/mobile/home.scss"
+import "../style/home/home.css"
+import "../style/home/mobile/home.css"
 
 function Home({device_type, games_list}) {
 	useTitle("Games Shop");

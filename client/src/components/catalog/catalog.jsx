@@ -6,8 +6,8 @@ import GameList from "./game_list.jsx"
 import grid_icon from "../../files/grid-view.png"
 import list_icon from "../../files/list-view.png"
 
-import "../../style/home/catalog.scss"
-import "../../style/home/mobile/catalog.scss"
+import "../../style/home/catalog.css"
+import "../../style/home/mobile/catalog.css"
 
 function Catalog({games_list, filters}) {
 	let scroll_positions = JSON.parse(window.sessionStorage.getItem('scroll_positions'));

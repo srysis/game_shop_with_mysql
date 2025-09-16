@@ -6,8 +6,8 @@ import useTitle from "../hooks/useTitle.jsx"
 
 import CartItem from "../components/cart/cart_item.jsx"
 
-import "../style/cart/cart.scss"
-import "../style/cart/mobile/cart.scss"
+import "../style/cart/cart.css"
+import "../style/cart/mobile/cart.css"
 
 function Cart( {cart_content, onRemove, onCartClear} ) {
 	useTitle("Cart on Games Shop");

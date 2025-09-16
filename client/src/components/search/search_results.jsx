@@ -2,8 +2,8 @@ import React from "react"
 
 import SearchResult from "./search_result.jsx"
 
-import "../../style/search/search_results.scss"
-import "../../style/search/mobile/search_results.scss"
+import "../../style/search/search_results.css"
+import "../../style/search/mobile/search_results.css"
 
 function SearchResults({setSearchingOverlayFunction, search_queue, found_games_list}) {
 	

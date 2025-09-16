@@ -1,7 +1,7 @@
 import React from "react"
 
-import "../style/layout/footer.scss"
-import "../style/layout/mobile/footer.scss"
+import "../style/layout/footer.css"
+import "../style/layout/mobile/footer.css"
 
 function Footer() {
 	return(

@@ -2,8 +2,8 @@ import React from "react"
 
 import acknowledge_icon from "../files/confirm-icon.png"
 
-import "../style/layout/message.scss"
-import "../style/layout/mobile/message.scss"
+import "../style/layout/message.css"
+import "../style/layout/mobile/message.css"
 
 function SuccessMessage( {type, onClickHandler} ) {
 	return (

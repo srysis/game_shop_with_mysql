@@ -8,8 +8,8 @@ import CartOverlay from "./cart/cart_overlay.jsx"
 
 import cart_icon from "../files/cart.png"
 
-import "../style/layout/header.scss"
-import "../style/layout/mobile/header.scss"
+import "../style/layout/header.css"
+import "../style/layout/mobile/header.css"
 
 function Header( {device_type, cart_content, setSearchQueueState, setFoundGamesListState} ) {
 	const [is_searching, setSearching] = React.useState(false);
