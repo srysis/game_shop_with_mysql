@@ -17,8 +17,10 @@ function GamePage({device_type, addToCartFunction, isDuplicate}) {
 	const [game_info, setGameInfo] = React.useState([]);
 	const [game_info_was_fetched, setWasFetched] = React.useState(false);
 
+	const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+
 	React.useEffect(() => {
-		axios.get(`http://localhost:8081/games/${id}`)
+		axios.get(`${API_BASE_URL}/games/${id}`)
 		.then(response => { setGameInfo(response.data); setWasFetched(true); })
 		.catch(error => console.error(error));
 	}, [id]);
@@ -104,7 +106,7 @@ function GamePage({device_type, addToCartFunction, isDuplicate}) {
 						<div className="tags_container">{Object.values(tags).map((tag, index) => <span key={index}>{tag}</span>)}</div>
 						<p>{game.short_description}</p>
 						<div className="buy_container">
-							<p className="price">${game.price}.00</p>
+							<p className="price">${game.price}</p>
 							{ !isDuplicate(game) && <button type="button" className="buy" onClick={ () => { onAddHandler(game); } } >Add to Cart</button> }
 							{ isDuplicate(game) && <button type="button" className="is_in_cart" disabled >In the cart</button> }
 						</div>
