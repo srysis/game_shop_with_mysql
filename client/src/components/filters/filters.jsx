@@ -106,7 +106,6 @@ function Filters({device_type, active_filters, setFiltersFunction, removeFilterF
 
 	function untickCheckedCheckboxes() {
 		const checked_filter_checkboxes = document.querySelectorAll("input[type='checkbox']:checked");
-		console.log(checked_filter_checkboxes)
 
 		for (let checked_filter_checkbox of checked_filter_checkboxes) {
 			checked_filter_checkbox.checked = false;
