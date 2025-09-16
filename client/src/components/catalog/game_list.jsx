@@ -17,7 +17,7 @@ function GameList({ game: {id, box_art, name, tags_list, price}, onClickHandler 
 				<span>{Object.values(tags).map((tag, index) => <span key={index}>{tag}</span>)}</span>
 			</div>
 			<div className="info">
-				<div className="price"><p>${price}.00</p></div>
+				<div className="price"><p>${price}</p></div>
 			</div>
 		</div>
 	)

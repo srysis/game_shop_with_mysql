@@ -19,7 +19,7 @@ function GameGrid({ game: {id, box_art, name, tags_list, price}, onClickHandler 
 			</div>
 			<div className="info">
 				<div className="tags_container">{Object.values(tags).map((tag, index) => <span key={index}>{tag}</span>)}</div>
-				<div className="price"><p>${price}.00</p></div>
+				<div className="price"><p>${price}</p></div>
 			</div>
 		</div>
 	)
