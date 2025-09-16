@@ -1,6 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+import { disableReactDevTools } from '@fvilers/disable-react-devtools'
+
 import axios from 'axios'
 
 import Layout from "./components/Layout.jsx"
@@ -20,8 +22,14 @@ function App() {
 	const [cart_content, setCartContent] = React.useState([]);
 	const [is_cart_init, setCartInit] = React.useState(false);
 
+	if (process.env.NODE_ENV == "production") {
+		disableReactDevTools();
+	}
+
+	const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+
 	React.useEffect(() => {
-		axios.get('http://localhost:8081/games')
+		axios.get(`${API_BASE_URL}/games`)
 		.then(response => { setGamesList(response.data); setGamesRetrieved(true);})
 		.catch(error => console.error(error));
 	}, []);
@@ -30,7 +38,7 @@ function App() {
 	React.useEffect(() => {
 		if (are_games_retrieved) {
 
-			axios.get('http://localhost:8081/cart')
+			axios.get(`${API_BASE_URL}/cart`)
 			.then(response => {
 				const received_IDs = response.data[0].cart_content;
 
@@ -56,7 +64,7 @@ function App() {
 		if (is_cart_init) {
 			const IDs = cart_content.map(item => {return item.id});
 
-			axios.post('http://localhost:8081/updateCart', IDs).catch(error => console.error(error));
+			axios.post(`${API_BASE_URL}/updateCart`, IDs).catch(error => console.error(error));
 		}
 	}, [cart_content])
 
